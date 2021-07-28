@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">MyLocation</string>
+
+    <!--- MyLocationActivity用-->
+    <string name="locationStart">測位開始</string>
+    <string name="locationWait">測位待機中</string>
+    <string name="locationPositioning">測位中</string>
+    <string name="locationStop">測位停止</string>
+    <string name="locationSetting">設定</string>
+
+    <!--- SettingActivity用-->
+    <string name="settingActIsCold">アシストデータ削除</string>
+
+    <!---LocationLog用-->
+    <string name="settingHeader">測位方式,測位回数(0:無限),測位タイムアウト,測位間隔,minTime,SUPLEND待ち時間,アシストデータ削除時間,アシストデータ削除有無</string>
+    <string name="locationHeader">測位開始時間,測位終了時間,測位成否,緯度,経度,TTFF,Accuracy,LocationTime(epoch),LocationTime(UTC)</string>
+
+    <!---SatelliteLog用-->
+    <string name="satelliteHeader">衛星状態更新時間,constellationType,svid,usedinfix,basebandCn0DbHz,carrierFrequencyHz,cn0DbHz,elevationDegrees</string>
+    <!---Setting用の項目 -->
+    <string name="settingPrefName">MyLocationSetting</string>
+    <string name="settingLocationType">LOCATIONTYPE</string>
+    <string name="settingCount">COUNT(0:無制限)</string>
+    <string name="settingTimeout">TIMEOUT(秒)</string>
+    <string name="settingInterval">INTERVAL(秒)</string>
+    <string name="settingminTime">minTime(ms)</string>
+    <string name="settingIsCold">isCold</string>
+    <string name="settingSuplEndWaitTime">SUPLENDWAITTIME(秒)</string>
+    <string name="settingDelAssistdataTime">DelAssistdataTime(秒)</string>
+    <string name="settingIsGetSatelliteLog">衛星情報ログ取得</string>
+
+    <!---測位種別用の文字列定数 -->
+    <string name="locationList">測位種別</string>
+    <string name="locationUeb">UEB</string>
+    <string name="locationUea">UEA</string>
+    <string name="locationCurrent">getCurrentLocation</string>
+    <string name="locationTracking">Tracking</string>
+    <string name="locationNw">NetworkProvider</string>
+    <string name="locationFlp">FLP</string>
+    <string name="locationiArea">OpeniArea</string>
+    <string name="getSatellite">getSatellite</string>
+    <!---測位結果をIntentで通知する場合の判別用のタグ-->
+    <string name="TagisFix">isFix</string>
+    <string name="TagLocation">location</string>
+    <string name="Tagttff">TTFF</string>
+    <string name="TagLocationStarttime">locationStartTime</string>
+    <string name="TagLocationStoptime">locationStopTime</string>
+    <string name="TagSuccessCount">successCount</string>
+    <string name="TagFailCount">failCount</string>
+
+    <!---衛星情報をIntentで通知する場合の判別用のタグ-->
+    <string name="SatelliteChangeTime">SatelliteChangeTime</string>
+    <string name="SatelliteConstellationType">SatelliteConstellationType</string>
+    <string name="SatelliteSvid">SatelliteSvid</string>
+    <string name="SatelliteUsedInFix">SatelliteUsedInFix</string>
+    <string name="SatelliteBaseBandCn0DbHz">SatelliteBaseBandCn0DbHz</string>
+    <string name="SatelliteCarrierFrequencyHz">SatelliteCarrierFrequencyHz</string>
+    <string name="SatelliteCn0DnHz">SatelliteCn0DnHz</string>
+    <string name="SatelliteGetElevationDegrees">SatelliteGetElevationDegrees</string>
+    <!--ServiceからPresentationが受け取る値の種類-->
+    <!--この値によってActivityに対する処理を変える-->
+    <string name="category">category</string>
+    <string name="categoryLocation">categoryLocation</string>
+    <string name="categoryColdStart">CategoryColdStart</string>
+    <string name="categoryColdStop">CategoryColdStop</string>
+    <string name="categoryServiceEnd">CategoryServiceEnd</string>
+
+    <string name="categoryGetSatellite">CategoryGetSatellite</string>
+</resources>
